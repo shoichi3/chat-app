@@ -38,11 +38,11 @@
 - belongs_to: user
 
 ## messages テーブル
-| Column      | Type          | Option                         |
-| ___________ | __________    | ______________________________ |
-| content        | string     |                                |
-| user           | references | null:false, foreign_key: true  |
-| name           | references | null:false, foreign_key: true  |
+| Column      | Type          | Option             |
+| ___________ | __________    | ___________________|
+| content        | string     |                    |
+| room           | references | foreign_key: true  |
+| user           | references | foreign_key: true  |
 
 ### Association
 
